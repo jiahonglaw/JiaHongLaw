@@ -13,4 +13,12 @@ body {
     padding: 20px;
 }
 
+
+
 /* Add in your own customisations */
+
+header {
+    background-color: #93d0f4;
+    text-align: center;
+    color: white;
+}
