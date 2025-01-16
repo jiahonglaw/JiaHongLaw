@@ -38,5 +38,19 @@ th, td {
 }
 
 a {
-    color: #0079c1
+    color: #0079c1;
+}
+
+footer { 
+    background-color: #93d0f4;
+    text-align: center;
+    color: white;
+    padding: 10px
+
+}
+
+section { 
+    margin: 30px
+
+
 }
