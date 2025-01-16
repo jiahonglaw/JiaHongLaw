@@ -22,3 +22,21 @@ header {
     text-align: center;
     color: white;
 }
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px
+
+}
+
+a {
+    color: #0079c1
+}
