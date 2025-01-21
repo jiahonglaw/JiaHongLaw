@@ -6,3 +6,9 @@ const disneyData = {
 };
 
 // Write your code below
+
+let disneyDataNew = disneyData
+
+disneyDataNew['volume'] = "1512311"
+
+console.log(disneyDataNew)
