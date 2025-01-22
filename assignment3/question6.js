@@ -8,20 +8,20 @@ const disneyData = {
 
 // Write your code below
 
-let DisneyLow = DisneyData["open"];
+let DisneyOpen = disneyData["open"];
 
-let DisneyHigh = DisneyData["high"];
+let DisneyHigh = disneyData["high"];
 
-let DisneyOpen = DisneyData["low"];
+let DisneyLow = disneyData["low"];
 
-let DisneyClose = DisneyData[3];
+let DisneyClose = disneyData["close"];
 
-let DisneyVolume = DisneyData[4];
+let DisneyVolume = disneyData["volume"];
 
 
 // Test for bullish case for high and low trading volume.
-if (bacClose > bacOpen){
-    if(bacVolume > 100000) {
+if (DisneyClose > DisneyOpen){
+    if(DisneyVolume > 100000) {
         console.log("Strong Bullish")
     } else { console.log("Bullish")
     }
@@ -29,8 +29,8 @@ if (bacClose > bacOpen){
 
 // Test for bearish case for high and low trading volume.
 
-else if (bacClose<bacOpen){
-    if(bacVolume > 10000) {
+else if (DisneyClose<DisneyOpen){
+    if(DisneyVolume > 10000) {
         console.log("Strong Bearish")
     } else { console.log("Bearish")
     }
