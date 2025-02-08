@@ -7,7 +7,7 @@ Question 1:
 p.then(string => console.log(string));
 
 Question 2:
-// Your code here
+p.catch((error) => console.error('Error:', error))
 
 Question 3:
 // Your code here
