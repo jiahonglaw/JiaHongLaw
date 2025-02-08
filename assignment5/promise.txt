@@ -4,6 +4,8 @@ p.then(value => console.log(value));
 Question 1:
 // Your code here
 
+p.then(string => console.log(string));
+
 Question 2:
 // Your code here
 
