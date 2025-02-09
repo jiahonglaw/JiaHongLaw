@@ -13,7 +13,7 @@ Question 3:
 p.then((data) => {console.log(data)});
 
 Question 4:
-// Your code here
+p.then((data) => {console.log(data['name'])});
 
 Question 5:
 // Your code here
