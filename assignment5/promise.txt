@@ -37,7 +37,8 @@ Promise.all(promises)
   .then((values) => console.log(values)) 
 
 Question 10:
-// Your code here
+Promise.race(promises).then((value) => {
+  console.log(value);}
 
 Bonus Question:
 // Your code here
