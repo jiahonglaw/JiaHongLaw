@@ -2,8 +2,6 @@ Example Question:
 p.then(value => console.log(value));
 
 Question 1:
-// Your code here
-
 p.then(string => console.log(string));
 
 Question 2:
@@ -16,10 +14,13 @@ Question 4:
 p.then((data) => {console.log(data['name'])});
 
 Question 5:
-// Your code here
+p.catch((error) => console.error(error))
 
 Question 6:
-// Your code here
+p.then((data) => Promise.resolve(data)) 
+p.catch((error) => console.error(error)) 
+p.finally(() => console.log('Promise settled')); 
+
 
 Question 7:
 // Your code here
