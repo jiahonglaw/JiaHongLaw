@@ -33,7 +33,8 @@ p.catch((error) => {
 .then((value) => console.log(value));
 
 Question 9:
-// Your code here
+Promise.all(promises)
+  .then((values) => console.log(values)) 
 
 Question 10:
 // Your code here
