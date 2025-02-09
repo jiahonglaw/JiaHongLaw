@@ -41,4 +41,12 @@ Promise.race(promises).then((value) => {
   console.log(value);})
 
 Bonus Question:
-// Your code here
+p.then((data)=> { 
+  return new Promise((resolve) => {
+    setTimeout(() => resolve('Hello ' + data), 1000)
+  })
+})
+.then((nextData) => {
+    console.log(nextData);
+});
+
