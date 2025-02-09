@@ -5,7 +5,7 @@ Question 1:
 p.then(string => console.log(string));
 
 Question 2:
-p.catch((error) => console.error('Error:', error))
+p.catch((error) => console.error('Error:', error));
 
 Question 3:
 p.then((data) => {console.log(data)});
@@ -14,19 +14,23 @@ Question 4:
 p.then((data) => {console.log(data['name'])});
 
 Question 5:
-p.catch((error) => console.error(error))
+p.catch((error) => console.error(error));
 
 Question 6:
 p.then((data) => Promise.resolve(data)) 
-p.catch((error) => console.error(error)) 
-p.finally(() => console.log('Promise settled')); 
-
+.catch((error) => console.error(error)) 
+.finally(() => console.log('Promise settled')); 
 
 Question 7:
-// Your code here
+p.then((data)=> {return data*2})
+.then((data)=>console.log(data));
 
 Question 8:
-// Your code here
+p.catch((error) => {
+    error;
+    return 0;
+})
+.then((value) => console.log(value));
 
 Question 9:
 // Your code here
