@@ -11,19 +11,24 @@ function PublicBlogPost(props) {
 function PrivateBlogPost(props) {
   return <div className='blog-post'>
     <h1>{props.title} </h1>
-    <h2> By: {props.author} on {props.date}  </h2>
+    <h2 className="meta"> By: {props.author} on {props.date}  </h2>
     <p>{props.content}</p>
-    </div>
-}
+    </div>}
 
-function BlogList(props) {
+function BlogList({blogPost}) {
+  return (
+  <div className='blog-list'>
+    {blogPost.map((post,index)=>
+      <PublicBlogPost 
+        key={index}
+        title={post.title} 
+        author={post.author} 
+        date={post.date}  
+        content={post.content}
+  />)}
+  </div>)
+    }
 
-
-
-
-
-
-}
 
 function Header(props) {
 
@@ -80,6 +85,7 @@ function App() {
 
   return <div>
       <Header title='My Blog' subheader='A blog about everything' />
+      <BlogList blogPost={blogPosts} />
     </div>
 
 };
