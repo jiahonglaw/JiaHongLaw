@@ -1,8 +1,5 @@
 // root.js
 
-import './styles.css';
-
-
 function PublicBlogPost() {
 
 }
@@ -17,6 +14,10 @@ function BlogList() {
 
 function Header(props) {
 
+  return <div className="header">
+  <h1>{props.title}</h1>
+  <p>{props.subheader}</p>
+  </div>
 
 }
 
@@ -65,7 +66,7 @@ function App() {
   ];
 
   return <div>
-      <Header />
+      <Header title='My Blog' subheader='A blog about everything' />
     </div>
 
 };
