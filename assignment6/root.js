@@ -1,5 +1,8 @@
 // root.js
 
+import './styles.css';
+
+
 function PublicBlogPost() {
 
 }
@@ -12,9 +15,11 @@ function BlogList() {
 
 }
 
-function Header() {
+function Header(props) {
+
 
 }
+
 
 function Footer() {
 
@@ -58,6 +63,10 @@ function App() {
       private: false
     }
   ];
+
+  return <div>
+      <Header />
+    </div>
 
 };
 
