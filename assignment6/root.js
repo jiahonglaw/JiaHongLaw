@@ -1,5 +1,6 @@
 // root.js
 
+
 function PublicBlogPost(props) {
   return <div className='blog-post'>
     <h1>{props.title} </h1>
@@ -40,7 +41,10 @@ function Header(props) {
 }
 
 
-function Footer() {
+function Footer(props) {
+  return <div className="footer">
+    <p>© {props.year} My Blog. All rights reserved. </p>
+  </div>
 
 };
 
@@ -86,6 +90,7 @@ function App() {
   return <div>
       <Header title='My Blog' subheader='A blog about everything' />
       <BlogList blogPost={blogPosts} />
+      <Footer year='2024' />
     </div>
 
 };
