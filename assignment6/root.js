@@ -8,8 +8,12 @@ function PublicBlogPost(props) {
     </div>
 }
 
-function PrivateBlogPost() {
-
+function PrivateBlogPost(props) {
+  return <div className='blog-post'>
+    <h1>{props.title} </h1>
+    <h2> By: {props.author} on {props.date}  </h2>
+    <p>{props.content}</p>
+    </div>
 }
 
 function BlogList(props) {
