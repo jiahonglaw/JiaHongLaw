@@ -4,7 +4,7 @@
 function PublicBlogPost(props) {
   return <div className='blog-post'>
     <h1>{props.title} </h1>
-    <h2> By: {props.author} on {props.date}  </h2>
+    <p className="meta"> By: {props.author} on {props.date} {" "} </p>
     <p>{props.content}</p>
     </div>
 }
@@ -12,7 +12,7 @@ function PublicBlogPost(props) {
 function PrivateBlogPost(props) {
   return <div className='blog-post'>
     <h1>{props.title} </h1>
-    <h2 className="meta"> By: {props.author} on {props.date}  </h2>
+    <p className="meta"> By: {props.author} on {props.date} {" "} </p>
     <p>{props.content}</p>
     </div>}
 
@@ -33,18 +33,18 @@ function BlogList({blogPost}) {
 
 function Header(props) {
 
-  return <div className="header">
+  return <header>
   <h1>{props.title}</h1>
   <p>{props.subheader}</p>
-  </div>
+  </header>
 
 }
 
 
 function Footer(props) {
-  return <div className="footer">
+  return <footer>
     <p>© {props.year} My Blog. All rights reserved. </p>
-  </div>
+    </footer>
 
 };
 
