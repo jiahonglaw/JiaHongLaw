@@ -10,7 +10,7 @@ function PublicBlogPost(props) {
 }
 
 function PrivateBlogPost(props) {
-  return <div className='blog-post'>
+  return <div className='private-posts'>
     <h1>{props.title} </h1>
     <p className="meta"> By: {props.author} on {props.date} {" "} </p>
     <p>The content of this post is private</p>
@@ -19,15 +19,19 @@ function PrivateBlogPost(props) {
 function BlogList({blogPost}) {
   return (
   <div className='blog-list'>
-    {blogPost.map((post,index)=>
+    {blogPost.map((post,index)=> post.private === false ?
       <PublicBlogPost 
         key={index}
         title={post.title} 
         author={post.author} 
         date={post.date}  
-        content={post.content}
-        private={post.private}
-  />)}
+        content={post.content}/>:
+        <PrivateBlogPost 
+        key={index}
+        title={post.title} 
+        author={post.author} 
+        date={post.date}  
+        content={post.content}/>)}
   </div>)
     }
 
