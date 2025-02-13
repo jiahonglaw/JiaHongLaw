@@ -13,7 +13,7 @@ function PrivateBlogPost(props) {
   return <div className='blog-post'>
     <h1>{props.title} </h1>
     <p className="meta"> By: {props.author} on {props.date} {" "} </p>
-    <p>{props.content}</p>
+    <p>The content of this post is private</p>
     </div>}
 
 function BlogList({blogPost}) {
@@ -26,6 +26,7 @@ function BlogList({blogPost}) {
         author={post.author} 
         date={post.date}  
         content={post.content}
+        private={post.private}
   />)}
   </div>)
     }
